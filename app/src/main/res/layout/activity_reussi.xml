@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_reussi">
+
+    <ImageView
+        android:id="@+id/bgSuc"
+        android:layout_width="408dp"
+        android:layout_height="730dp"
+        app:srcCompat="@drawable/successs"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:srcCompat="@drawable/successs" />
+    <EditText
+        android:id="@+id/PhoneSucc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="N Tel"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/succSms"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864"
+        android:backgroundTint="#00ff00"
+        />
+
+    <Button
+        android:id="@+id/succSms"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:text="Send SMS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#00ff00"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <TextView
+        android:id="@+id/SuccT"
+        android:layout_width="353dp"
+        android:layout_height="140dp"
+        android:text="TextView"
+        android:textColor="#00FF00"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgSuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgSuc"
+        app:layout_constraintVertical_bias="0.13" />
+</androidx.constraintlayout.widget.ConstraintLayout>
